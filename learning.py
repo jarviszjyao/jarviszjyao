@@ -1,20 +1,40 @@
 
 # coding=utf-8
 
+i=100; a=0; b=0; c=0
+
+while i <1000:
+    a = i // 100
+    b = (i - a * 100) // 10
+    c = i - a * 100 - b * 10
+    if i == (a ** 3 + b ** 3 + c ** 3):
+        print("i = " + str(i))
+    i += 1
+
+
+
+#------------------------break/continue---------------------
+
+# for item in range(10):
+#     if item ==3:
+#         # break
+#         continue
+#     print(item)
+
 
 #--------------------------for in------------------------
-print ("something...")
-for item in 'Hello':
-    if item =='l':
-        break
-    print(item)
+# print ("something...")
+# for item in 'Hello':
+#     if item =='l':
+#         break
+#     print(item)
 
-numbers= [43,32,55,74]
-print ("---full sentence---")
-for item in numbers:
-    if item == 55:
-        break
-    print(item)
+# numbers= [43,32,55,74]
+# print ("---full sentence---")
+# for item in range(100):
+#     if item == 81:
+#         break
+#     print(item)
 
 # -------------------------while else---------------------
 # i = 0
